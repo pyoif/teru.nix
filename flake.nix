@@ -3,5 +3,8 @@
 
   inputs = { nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable"; };
 
-  outputs = { self, nixpkgs }: { lib = import ./lib; };
+  outputs = { self, nixpkgs }: {
+    lib = import ./lib;
+    templates = import ./template;
+  };
 }

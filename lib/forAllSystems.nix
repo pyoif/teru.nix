@@ -1,4 +1,5 @@
-nixpkgs: f:
+{ nixpkgs }:
+f:
 builtins.listToAttrs (map (system: {
   name = system;
   value = f (builtins.getAttr system nixpkgs.legacyPackages);
