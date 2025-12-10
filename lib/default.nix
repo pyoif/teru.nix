@@ -1,0 +1,1 @@
+{ forAllSystems = import ./forAllSystems.nix; }
