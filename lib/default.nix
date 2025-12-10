@@ -1,3 +1,3 @@
 { nixpkgs }: {
-  forAllSystems = import ./forAllSystems.nix { nixpkgs = import nixpkgs; };
+  forAllSystems = (import ./forAllSystems.nix) { inherit nixpkgs; };
 }

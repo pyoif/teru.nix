@@ -4,7 +4,7 @@
   inputs = { nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable"; };
 
   outputs = { self, nixpkgs }: {
-    lib = import ./lib { nixpkgs = import nixpkgs; };
+    lib = import ./lib { inherit nixpkgs; };
     templates = import ./template;
   };
 }
